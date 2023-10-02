@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\CycleCategory>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Cart>
  */
-class CycleCategoryFactory extends Factory
+class CartFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,8 @@ class CycleCategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            //'size' => fake()->randomElement($array = array('01','02','03'))
+            'user_id' => fake()->randomElement($array = array ('1','2','3')),
+            'cycle_id' => fake()->randomElement($array = array ('1','2','3')),
         ];
     }
 }

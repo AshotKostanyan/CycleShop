@@ -5779,6 +5779,7 @@ button.close {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+  overflow-y: hidden;
 }
 
 .carousel-item-next,
